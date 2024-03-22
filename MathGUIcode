@@ -1,0 +1,13 @@
+import javax.swing.JOptionPane;
+public class MathGUIcode {
+
+    public static void main(String[] args){
+        Double x = Double.valueOf(JOptionPane.showInputDialog("Enter the x:"));
+        JOptionPane.showMessageDialog ( null , x );
+
+        Double y = Double.valueOf(JOptionPane.showInputDialog("Enter the y:"));
+        JOptionPane.showMessageDialog ( null , y );
+
+        JOptionPane.showMessageDialog ( null , "The hypotenuse: " + Math.sqrt(((x*x)+(y*y))) );
+    }
+}
